@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <main>
+    <section class="min-h-850 flex">
+      <section class="w-1/2 test"></section>
+      <section class="w-1/2 bg-alyssa bg-cover"></section>
+    </section>
+
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
 };
 </script>
+<style scoped>
+.test {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #F5F5F5 50%, #EAE1DA 50%);
+}
+</style>
