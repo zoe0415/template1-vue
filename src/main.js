@@ -5,9 +5,9 @@ import store from "./store";
 import "tailwindcss/tailwind.css"
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faSun, faLeaf, faHistory } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faBars)
+library.add(faBars, faSun, faLeaf, faHistory)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false;
