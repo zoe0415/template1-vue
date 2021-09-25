@@ -1,8 +1,8 @@
 <template>
   <header>
-    <section class="max-w-screen-xl mx-auto pt-5 flex flex-wrap items-center justify-between">
+    <section class="max-w-screen-xl mx-auto pt-5 px-3 flex flex-wrap sm:flex-nowrap items-center justify-between">
       <!-- social link -->
-      <ul class="flex">
+      <ul class="w-full sm:w-auto flex justify-center">
         <li>
           <a href="" class="inline-block px-2 hover:text-antiqueBrass">
             <svg
@@ -71,47 +71,45 @@
       </ul>
 
       <!-- logo -->
-      <div class="max-w-md">
-        <a href=""><img src="../../assets/logo.png" alt="logo" class="w-full"></a>        
+      <div class="w-full sm:w-auto text-center px-12">
+        <a href="" class="inline-block max-w-md"><img src="../../assets/images/logo.png" alt="logo" class="w-full"></a>        
       </div>
 
       <!-- work with me button -->
       <div><a href="" class="pseudo">Work With Me</a></div>
-      
-      <!-- link -->
-      <nav class="w-full pt-8">
-        <ul>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Home</a></li>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Post Format</a></li>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold relative hover:text-gray-600">
-            <a href="">Categories</a>
-            <ul class="absolute hidden group-hover:block">
-              <li><a href="">Lifestyle</a></li>
-              <li><a href="">Featured</a></li>
-              <li><a href="">Beauty</a></li>
-              <li><a href="">Living</a></li>
-            </ul>
-          </li>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Blog</a></li>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">About</a></li>
-          <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Contact</a></li>
-          <li class="inline-block md:hidden">
-            <a href=""><i class="fas fa-bars"></i></a>
-          </li>
-          <li class="inline-block">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              class="w-4 h-4"
-            >
-              <path
-                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-              ></path>
-            </svg>
-          </li>
-        </ul>
-      </nav>
     </section>
+
+    <!-- link -->
+    <nav class="w-full pt-8">
+      <ul class="flex justify-center items-center">
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Home</a></li>
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Post Format</a></li>
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold relative hover:text-gray-600">
+          <a href="">Categories</a>
+          <ul class="absolute hidden group-hover:block">
+            <li><a href="">Lifestyle</a></li>
+            <li><a href="">Featured</a></li>
+            <li><a href="">Beauty</a></li>
+            <li><a href="">Living</a></li>
+          </ul>
+        </li>
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Blog</a></li>
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">About</a></li>
+        <li class="hidden md:inline-block mx-4 hover:text-antiqueBrass transition-all duration-500 tracking-wider font-semibold"><a href="">Contact</a></li>
+        <li class="inline-block md:hidden mx-4"><a href=""><font-awesome-icon icon="bars" /></a></li>
+        <li class="inline-block mx-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-4 h-4"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
@@ -120,3 +118,71 @@ export default {
   name: "Header",
 };
 </script>
+<style scoped>
+.pseudo {
+  border-width: 1px;
+  padding: 10px 30px 10px 30px;
+  color: #000;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  background: transparent;
+  white-space: nowrap;
+  line-height: normal;
+}
+.pseudo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -100%) rotate(0deg);
+  -webkit-transform: translate(-100%, -100%) rotate(0deg);
+  border: solid;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  transition: all .7s ease-out;
+  border-color: inherit;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+.pseudo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(100%, 100%) rotate(0deg);
+  -webkit-transform: translate(100%, 100%) rotate(0deg);
+  border: solid;
+  border-width: 1px 0 0 1px;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  transition: all .7s ease-out;
+  border-color: inherit;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+.pseudo:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.pseudo:hover::before {
+  border-color: #000;
+  left: 100%;
+  transform: translate(0, -100%) rotate(90deg);
+}
+.pseudo:hover::after {
+  border-color: #000;
+  right: 100%;
+  transform: translate(0, 100%) rotate(90deg);
+}
+</style>
