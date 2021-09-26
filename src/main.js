@@ -2,7 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "tailwindcss/tailwind.css"
+// import "tailwindcss/tailwind.css"
+import "./assets/tailwind.css"
 // fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faSun, faLeaf, faHistory } from '@fortawesome/free-solid-svg-icons'

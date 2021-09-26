@@ -76,7 +76,7 @@
       </div>
 
       <!-- work with me button -->
-      <div><a href="" class="pseudo">Work With Me</a></div>
+      <div><a href="" class="btn btn-black">Work With Me</a></div>
     </section>
 
     <!-- link -->
@@ -118,71 +118,3 @@ export default {
   name: "Header",
 };
 </script>
-<style scoped>
-.pseudo {
-  border-width: 1px;
-  padding: 10px 30px 10px 30px;
-  color: #000;
-  background-color: rgba(0,0,0,0);
-  border: 1px solid;
-  font-weight: 600;
-  text-transform: capitalize;
-  display: inline-block;
-  position: relative;
-  transition: all 0.5s ease 0s;
-  background: transparent;
-  white-space: nowrap;
-  line-height: normal;
-}
-.pseudo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-100%, -100%) rotate(0deg);
-  -webkit-transform: translate(-100%, -100%) rotate(0deg);
-  border: solid;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  transition: all .7s ease-out;
-  border-color: inherit;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-}
-.pseudo::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(100%, 100%) rotate(0deg);
-  -webkit-transform: translate(100%, 100%) rotate(0deg);
-  border: solid;
-  border-width: 1px 0 0 1px;
-  display: inline-block;
-  padding: 3px;
-  -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  transition: all .7s ease-out;
-  border-color: inherit;
-  border-top-width: 1px;
-  border-left-width: 1px;
-}
-.pseudo:hover {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
-}
-.pseudo:hover::before {
-  border-color: #000;
-  left: 100%;
-  transform: translate(0, -100%) rotate(90deg);
-}
-.pseudo:hover::after {
-  border-color: #000;
-  right: 100%;
-  transform: translate(0, 100%) rotate(90deg);
-}
-</style>

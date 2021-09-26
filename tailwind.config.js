@@ -11,12 +11,18 @@ module.exports = {
         'footer1': "url('~@/assets/images/footer1.jpeg')",
         'footer2': "url('~@/assets/images/footer2.jpeg')",
         'footer3': "url('~@/assets/images/footer3.jpeg')",
+        'blogBG': "url('~@/assets/images/blogBG.jpeg')",
+        'blog1': "url('~@/assets/images/blog1.jpeg')",
+        'blog2': "url('~@/assets/images/blog2.jpeg')",
+        'blog3': "url('~@/assets/images/blog3.jpeg')",
       },
       fontSize: {
         '6vw': '6vw',
       }
     },
     colors: {
+      transparent: 'transparent',
+      inherit: 'inherit',
       black: {
         DEFAULT: '#000000'
       },
@@ -34,6 +40,7 @@ module.exports = {
       }
     },
     minHeight: {
+      '500': '500px',
       '850': '850px',
     }
   },

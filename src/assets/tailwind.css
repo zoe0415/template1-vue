@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/*  */
+.bg-modal::before {
+  @apply block h-full;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2)
+}
+/* button */
+.btn {
+  @apply relative inline-block bg-transparent transition-all duration-500 border py-2.5 px-8 font-semibold capitalize; 
+}
+.btn::before {
+  @apply inline-block absolute top-0 left-0 p-1 border-r border-b border-inherit transition-all duration-700 transform -translate-x-full -translate-y-full rotate-0;
+  content: "";
+  /* transform: translate(-100%, -100%) rotate(0deg); */
+  /* -webkit-transform: translate(-100%, -100%) rotate(0deg);
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  transition: all .7s ease-out; */
+}
+.btn::after {
+  @apply inline-block absolute bottom-0 right-0 p-1 border-t border-l border-inherit transition-all duration-700 transform translate-x-full translate-y-full rotate-0;
+  content: "";
+  /* transform: translate(100%, 100%) rotate(0deg);
+  -webkit-transform: translate(100%, 100%) rotate(0deg); */
+  /* -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  transition: all .7s ease-out; */
+}
+.btn:hover::before {
+  @apply left-full transform translate-x-0 -translate-y-full rotate-90;
+}
+.btn:hover::after {
+  @apply right-full transform translate-x-0 translate-y-full rotate-90;
+}
+
+
+/* button color */
+.btn-black {
+  @apply text-black bg-transparent;
+  /* background-color: rgba(0,0,0,0); */
+}
+.btn-black:hover {
+  @apply text-white bg-black border-black;
+}
+.btn-antiqueBrass {
+  @apply text-antiqueBrass bg-transparent;
+  /* background-color: rgba(0,0,0,0); */
+}
+.btn-antiqueBrass:hover {
+  @apply text-white bg-antiqueBrass border-antiqueBrass;
+}
