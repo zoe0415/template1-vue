@@ -16,7 +16,7 @@
 export default {
   name: "Blog",
   props: {
-    BGImage: String
-  }
-};
+    BGImage: String,
+  },
+}
 </script>

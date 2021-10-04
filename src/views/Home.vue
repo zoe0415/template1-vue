@@ -1,8 +1,8 @@
 <template>
   <main class="mt-4">
     <section class="min-h-850 flex">
-      <section class="test relative w-1/2 flex items-center content-center flex-wrap py-8 ">
-        <div  class="absolute -right-24 top-72">
+      <section class="test relative w-1/2 flex items-center content-center flex-wrap py-8">
+        <div class="absolute -right-24 top-72">
           <div class="text-antiqueBrass">SIMPLE WAYS TO</div>
           <h2 class="text-6vw leading-none">Free Coaching</h2>
           <h2 class="text-6vw leading-none">Seasion</h2>
@@ -23,11 +23,11 @@
         </Service>
         <Service class="my-12" :linkHref="'#'" :imgFileName="'service2.jpeg'">
           <template v-slot:icon><font-awesome-icon icon="leaf" /></template>
-          <template v-slot:title>Headline Goes Here</template>          
+          <template v-slot:title>Headline Goes Here</template>
         </Service>
         <Service :linkHref="'#'" :imgFileName="'service3.jpeg'">
           <template v-slot:icon><font-awesome-icon icon="history" /></template>
-          <template v-slot:title>Your Headline in Here</template>  
+          <template v-slot:title>Your Headline in Here</template>
         </Service>
       </section>
     </section>
@@ -36,13 +36,19 @@
     <section class="bg-springWood">
       <section class="max-w-screen-xl mx-auto px-3 grid grid-cols-1 sm:grid-cols-2 gap-8 py-16">
         <div class="relative">
-          <div class="absolute w-7/12 h-full flex items-center"><img src="../assets/images/AzuraTheme1.jpeg" alt="" class="bg-white p-2"></div>          
-          <img src="../assets/images/AzuraTheme2.jpeg" alt="" class="ml-auto">
+          <div class="absolute w-7/12 h-full flex items-center">
+            <img src="../assets/images/AzuraTheme1.jpeg" alt="" class="bg-white p-2" />
+          </div>
+          <img src="../assets/images/AzuraTheme2.jpeg" alt="" class="ml-auto" />
         </div>
         <div class="flex flex-col justify-center items-baseline gap-y-4">
           <p class="text-antiqueBrass">Hey there !!!</p>
-          <h2 class="text-2xl"> We are AzuraTheme</h2>
-          <p class="text-gray my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellendus minus voluptates consequuntur maiores! Dicta ipsa dolor corrupti laborum nulla minima veniam natus eos sed id beatae delectus, dolores nisi!</p>
+          <h2 class="text-2xl">We are AzuraTheme</h2>
+          <p class="text-gray my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellendus minus voluptates consequuntur
+            maiores! Dicta ipsa dolor corrupti laborum nulla minima veniam natus eos sed id beatae delectus, dolores
+            nisi!
+          </p>
           <a href="" class="btn btn-antiqueBrass">Read More</a>
         </div>
       </section>
@@ -70,25 +76,24 @@
         </section>
       </section>
     </section>
-
   </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import Service from "@/components/home/Service.vue";
-import Blog from "@/components/home/Blog.vue";
+import Service from "@/components/home/Service.vue"
+import Blog from "@/components/home/Blog.vue"
 export default {
   name: "Home",
   components: {
     Service,
-    Blog
-  }
-};
+    Blog,
+  },
+}
 </script>
 <style scoped>
 .test {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #F5F5F5 50%, #EAE1DA 50%);
+  background-image: linear-gradient(180deg, #f5f5f5 50%, #eae1da 50%);
 }
 </style>
