@@ -1,6 +1,6 @@
 <template>
   <header>
-    <section class="max-w-screen-xl mx-auto pt-5 px-3 flex flex-wrap sm:flex-nowrap items-center justify-between">
+    <section class="max-w-screen-xl mx-auto px-3 pt-5 flex flex-wrap sm:flex-nowrap items-center justify-between">
       <!-- social link -->
       <ul class="w-full sm:w-auto flex justify-center">
         <li>
@@ -174,5 +174,11 @@
 <script>
 export default {
   name: "Header",
+  methods: {
+    test() {
+      var test111 = "111"
+      console.log(test111)
+    },
+  },
 }
 </script>

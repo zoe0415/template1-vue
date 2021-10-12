@@ -15,7 +15,9 @@
     <section class="max-w-screen-xl mx-auto px-3 py-16">
       <h6 class="text-center text-antiqueBrass">WORK WITH ME</h6>
       <h2 class="text-center text-3xl">Our Service</h2>
-      <div class="text-center"><span class="inline-block w-px h-14 bg-antiqueBrass"></span></div>
+      <div class="text-center">
+        <span class="inline-block w-px h-14 bg-antiqueBrass"></span>
+      </div>
       <section class="grid grid-cols-1 sm:grid-cols-3 gap-x-4 -mt-4">
         <Service :linkHref="'#'" :imgFileName="'service1.jpeg'">
           <template v-slot:icon><font-awesome-icon icon="sun" /></template>
@@ -76,18 +78,33 @@
         </section>
       </section>
     </section>
+
+    <!-- THE LATEST -->
+    <section class="max-w-screen-xl mx-auto px-3 py-16">
+      <h6 class="text-center text-antiqueBrass">THE LATEST</h6>
+      <h2 class="text-center text-3xl">What’s New on the Blog?</h2>
+      <div class="text-center">
+        <span class="inline-block w-px h-14 bg-antiqueBrass"></span>
+      </div>
+      <section class="grid grid-cols-1 sm:grid-cols-3 gap-x-8">
+        <Card :imgFileName="'latest1.jpg'" :date="'2021-07-24'"></Card>
+        <Card :imgFileName="'latest2.jpg'" :date="'2021-06-15'"></Card>
+        <Card :imgFileName="'latest3.jpg'" :date="'2021-08-28'"></Card>
+      </section>
+    </section>
   </main>
 </template>
 
 <script>
-// @ is an alias to /src
 import Service from "@/components/home/Service.vue"
 import Blog from "@/components/home/Blog.vue"
+import Card from "@/components/Card.vue"
 export default {
   name: "Home",
   components: {
     Service,
     Blog,
+    Card,
   },
 }
 </script>

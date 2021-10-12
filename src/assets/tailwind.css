@@ -2,16 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* contact tag */
+/* .contact-tag {
+  @apply absolute border-t-4 border-r-4;
+  content: "";
+} */
 
-/*  */
-.bg-modal::before {
-  @apply block h-full;
-  content: '';
-  background-color: rgba(0, 0, 0, 0.2)
+/* sidebar title */
+.widget-title {
+  @apply flex items-center pb-1 mb-8 text-2xl border-b border-gray-light;
 }
+.widget-title::before {
+  @apply inline-block text-antiqueBrass mr-2 tracking-widest;
+  content: "//";
+}
+
+/* 文字過多 */
+.clamp {
+  @apply overflow-hidden overflow-ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.clamp-2 {
+  -webkit-line-clamp: 2;
+}
+.clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* date tag */
+.diamond {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
 /* button */
 .btn {
-  @apply relative inline-block bg-transparent transition-all duration-500 border py-2.5 px-8 font-semibold capitalize; 
+  @apply relative inline-block bg-transparent transition-all duration-500 border py-2.5 px-8 font-semibold capitalize;
 }
 .btn::before {
   @apply inline-block absolute top-0 left-0 p-1 border-r border-b border-inherit transition-all duration-700 transform -translate-x-full -translate-y-full rotate-0;
@@ -38,19 +64,22 @@
   @apply right-full transform translate-x-0 translate-y-full rotate-90;
 }
 
-
 /* button color */
 .btn-black {
   @apply text-black bg-transparent;
-  /* background-color: rgba(0,0,0,0); */
 }
 .btn-black:hover {
   @apply text-white bg-black border-black;
 }
 .btn-antiqueBrass {
   @apply text-antiqueBrass bg-transparent;
-  /* background-color: rgba(0,0,0,0); */
 }
 .btn-antiqueBrass:hover {
   @apply text-white bg-antiqueBrass border-antiqueBrass;
+}
+.btn-white {
+  @apply text-white bg-transparent;
+}
+.btn-white:hover {
+  @apply text-antiqueBrass bg-white border-white;
 }

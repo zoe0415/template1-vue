@@ -24,12 +24,16 @@
     </div>
 
     <!-- title、description、link -->
-    <h4 class="mt-16 md:mt-20 mb-4 text-2xl text-center"><slot name="title"></slot></h4>
+    <h4 class="mt-16 md:mt-20 mb-4 text-2xl text-center">
+      <slot name="title"></slot>
+    </h4>
     <div class="mb-4 text-center text-gray">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci repudiandae aut doloribus et, temporibus,
       nulla quod eius illo saepe suscipit expedita at totam dolores. Velit, magnam. Dicta, explicabo distinctio.
     </div>
-    <div class="text-center"><a :href="linkHref" class="text-antiqueBrass border-b">VIEW MORE</a></div>
+    <div class="text-center">
+      <a :href="linkHref" class="text-antiqueBrass border-b">VIEW MORE</a>
+    </div>
   </section>
 </template>
 
