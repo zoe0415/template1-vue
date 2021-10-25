@@ -47,9 +47,12 @@ module.exports = {
       springWood: {
         DEFAULT: "#F6F1ED",
       },
+      red: {
+        DEFAULT: "#dc3232",
+      },
     },
     minHeight: {
-      400: "400px",
+      500: "500px",
       850: "850px",
     },
   },

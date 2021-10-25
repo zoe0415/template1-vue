@@ -110,8 +110,8 @@
     <section class="mb-10 p-10 border border-gray-light">
       <h3 class="widget-title">Categories</h3>
       <div class="relative bg-blogCategories1">
-        <div class="absolute top-0 bg-black opacity-40"></div>
-        <div class="relative">
+        <div class="relative py-5 text-center">
+          <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
           <a href="" class="btn btn-white">Beauty</a>
         </div>
       </div>
