@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mt-4">
     <!-- banner -->
     <section
       class="relative min-h-500 bg-contactBG bg-no-repeat bg-center bg-cover flex items-center justify-center mb-8"
@@ -9,7 +9,7 @@
     </section>
 
     <!-- contact detail -->
-    <section class="max-w-screen-xl mx-auto px-3 grid grid-cols-4 gap-x-4 mb-8">
+    <section class="max-w-screen-xl mx-auto px-3 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-8 mb-20">
       <Card>
         <template slot="icon"><font-awesome-icon icon="phone" /></template>
         <template slot="title">Phone Number</template>
@@ -44,8 +44,10 @@
     </section>
 
     <!-- form -->
-    <section class="max-w-screen-xl mx-auto px-3 grid grid-cols-2 gap-x-4 mb-8">
-      <div></div>
+    <section class="max-w-screen-xl mx-auto px-3 grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8 mb-8">
+      <div class="sm:block hidden">
+        <img src="~@/assets/images/contactFormBG.jpeg" alt="" />
+      </div>
       <div>
         <h3 class="text-antiqueBrass">Say Hello !!!</h3>
         <h2 class="text-2xl">I'd love to hear from you</h2>
@@ -53,7 +55,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quia inventore ipsa aperiam rem illum
           maxime magni dolorum obcaecati iste, ab saepe cumque ad nihil quos mollitia, quibusdam sed illo.
         </p>
-        <div class="mt-8 grid grid-cols-2 gap-6">
+        <div class="mt-8 grid sm:grid-cols-2 grid-cols-1 gap-6">
           <div>
             <input
               type="text"
@@ -72,7 +74,7 @@
             />
             <span v-if="isShowMsg.email.show" class="text-red">{{ isShowMsg.email.text }}</span>
           </div>
-          <div class="col-span-2">
+          <div class="sm:col-span-2">
             <input
               type="text"
               v-model="formData.subject"
@@ -81,7 +83,7 @@
             />
             <span v-if="isShowMsg.subject.show" class="text-red">{{ isShowMsg.subject.text }}</span>
           </div>
-          <div class="col-span-2">
+          <div class="sm:col-span-2">
             <textarea
               v-model="formData.message"
               cols="30"
@@ -94,7 +96,7 @@
           <button
             type="button"
             @click="handleSubmitForm"
-            class="justify-self-center col-span-2 mt-8 py-3 px-8 bg-antiqueBrass text-white"
+            class="justify-self-center sm:col-span-2 mt-8 py-3 px-8 bg-antiqueBrass text-white"
           >
             Send Message
           </button>

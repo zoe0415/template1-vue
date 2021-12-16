@@ -2,7 +2,7 @@
   <footer class="bg-black text-white py-4">
     <section class="max-w-screen-xl mx-auto px-3 flex justify-center flex-wrap py-12">
       <section class="w-full md:w-1/5 md:text-right">
-        <h4 class="pb-4 text-2xl">Navigation</h4>
+        <h4 class="pb-4 text-2xl text-center">Navigation</h4>
         <ul class="text-gray">
           <li><a href="">Home page</a></li>
           <li><a href="">About</a></li>
@@ -25,7 +25,7 @@
         </div>
       </section>
       <section class="w-full md:w-1/5">
-        <h5 class="pb-4 text-2xl">Contact</h5>
+        <h5 class="pb-4 text-2xl text-center">Contact</h5>
         <ul>
           <li>
             <h5>Phone Number</h5>

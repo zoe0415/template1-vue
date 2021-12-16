@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        // 'xl': '1280px',
         xl: "1300px",
+        "2xl": "1536px",
       },
       backgroundImage: {
-        alyssa: "url('~@/assets/images/alyssa-strohmann-CGXxpcUrhdo-unsplash.jpeg')",
         footer1: "url('~@/assets/images/footer1.jpeg')",
         footer2: "url('~@/assets/images/footer2.jpeg')",
         footer3: "url('~@/assets/images/footer3.jpeg')",
@@ -53,7 +57,6 @@ module.exports = {
     },
     minHeight: {
       500: "500px",
-      850: "850px",
     },
   },
   variants: {

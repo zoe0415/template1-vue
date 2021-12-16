@@ -58,7 +58,9 @@
       </div>
 
       <!-- work with me button -->
-      <div><a href="" class="btn btn-black">Work With Me</a></div>
+      <div class="min-w-max w-full sm:w-auto mt-8 sm:mt-0 text-center">
+        <a href="" class="btn btn-black">Work With Me</a>
+      </div>
     </section>
 
     <!-- link -->
@@ -76,9 +78,9 @@
             font-semibold
           "
         >
-          <a href="">Home</a>
+          <a href="/">Home</a>
         </li>
-        <li
+        <!-- <li
           class="
             hidden
             md:inline-block
@@ -113,6 +115,20 @@
             <li><a href="">Beauty</a></li>
             <li><a href="">Living</a></li>
           </ul>
+        </li> -->
+        <li
+          class="
+            hidden
+            md:inline-block
+            mx-4
+            hover:text-antiqueBrass
+            transition-all
+            duration-500
+            tracking-wider
+            font-semibold
+          "
+        >
+          <a href="/blog">Blog</a>
         </li>
         <li
           class="
@@ -126,7 +142,7 @@
             font-semibold
           "
         >
-          <a href="">Blog</a>
+          <a href="/about">About</a>
         </li>
         <li
           class="
@@ -140,21 +156,7 @@
             font-semibold
           "
         >
-          <a href="">About</a>
-        </li>
-        <li
-          class="
-            hidden
-            md:inline-block
-            mx-4
-            hover:text-antiqueBrass
-            transition-all
-            duration-500
-            tracking-wider
-            font-semibold
-          "
-        >
-          <a href="">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li class="inline-block md:hidden mx-4">
           <a href=""><font-awesome-icon icon="bars" /></a>

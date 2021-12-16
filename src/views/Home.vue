@@ -1,14 +1,16 @@
 <template>
   <main class="mt-4">
-    <section class="min-h-850 flex">
-      <section class="test relative w-1/2 flex items-center content-center flex-wrap py-8">
-        <div class="absolute -right-24 top-72">
+    <section class="flex">
+      <section class="test relative w-1/4 lg:w-1/2 flex items-center content-center flex-wrap py-8">
+        <div class="absolute lg:-right-1/4 -right-full">
           <div class="text-antiqueBrass">SIMPLE WAYS TO</div>
           <h2 class="text-6vw leading-none">Free Coaching</h2>
           <h2 class="text-6vw leading-none">Seasion</h2>
         </div>
       </section>
-      <section class="w-1/2 bg-alyssa bg-cover"></section>
+      <section class="w-3/4 lg:w-1/2 bg-cover">
+        <img src="~@/assets/images/alyssa-strohmann-CGXxpcUrhdo-unsplash.jpeg" alt="" />
+      </section>
     </section>
 
     <!-- service -->
@@ -61,8 +63,8 @@
       <section class="absolute top-0 w-full h-full bg-white opacity-80"></section>
       <section class="relative max-w-screen-xl mx-auto px-3">
         <h6 class="text-antiqueBrass font-semibold">BROWSE CATEGORIES</h6>
-        <h2 class="w-2/3 text-5xl">Need Help? Let me be your new blogging besite</h2>
-        <section class="grid grid-cols-3 gap-x-8 min-h-500">
+        <h2 class="lg:w-2/3 w-full lg:text-5xl text-3xl">Need Help? Let me be your new blogging besite</h2>
+        <section class="grid sm:grid-cols-3 grid-cols-1 sm:gap-x-8 gap-y-8 mt-8 min-h-500">
           <Blog :BGImage="'bg-blog1'">
             <template v-slot:linkName>Lifestyle</template>
             <template v-slot:postNum>9 post</template>
@@ -86,7 +88,7 @@
       <div class="text-center">
         <span class="inline-block w-px h-14 bg-antiqueBrass"></span>
       </div>
-      <section class="grid grid-cols-1 sm:grid-cols-3 gap-x-8">
+      <section class="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-8 gap-y-10">
         <Card :imgFileName="'latest1.jpg'" :date="'2021-07-24'"></Card>
         <Card :imgFileName="'latest2.jpg'" :date="'2021-06-15'"></Card>
         <Card :imgFileName="'latest3.jpg'" :date="'2021-08-28'"></Card>
