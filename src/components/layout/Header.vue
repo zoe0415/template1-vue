@@ -64,7 +64,7 @@
     </section>
 
     <!-- link -->
-    <nav class="w-full pt-8">
+    <nav class="relative w-full pt-8">
       <ul class="flex justify-center items-center">
         <li
           class="
@@ -78,7 +78,7 @@
             font-semibold
           "
         >
-          <a href="/">Home</a>
+          <a href="">Home</a>
         </li>
         <!-- <li
           class="
@@ -128,8 +128,23 @@
             font-semibold
           "
         >
-          <a href="/blog">Blog</a>
+          <a :href="location + '/template1-vue/#/blog'">Blog</a>
+          <!-- <a href="/blog">Blog</a> -->
         </li>
+        <!-- <li
+          class="
+            hidden
+            md:inline-block
+            mx-4
+            hover:text-antiqueBrass
+            transition-all
+            duration-500
+            tracking-wider
+            font-semibold
+          "
+        >
+          <a :href="location + '/template1-vue/#/about'">About</a>
+        </li> -->
         <li
           class="
             hidden
@@ -142,23 +157,9 @@
             font-semibold
           "
         >
-          <a href="/about">About</a>
+          <a :href="location + '/template1-vue/#/contact'">Contact</a>
         </li>
-        <li
-          class="
-            hidden
-            md:inline-block
-            mx-4
-            hover:text-antiqueBrass
-            transition-all
-            duration-500
-            tracking-wider
-            font-semibold
-          "
-        >
-          <a href="/contact">Contact</a>
-        </li>
-        <li class="inline-block md:hidden mx-4">
+        <li class="inline-block md:hidden mx-4" @click.prevent="isShowHamburger = !isShowHamburger">
           <a href=""><font-awesome-icon icon="bars" /></a>
         </li>
         <li class="inline-block mx-4">
@@ -169,6 +170,14 @@
           </svg>
         </li>
       </ul>
+      <section class="absolute w-full z-10" v-show="isShowHamburger">
+        <ul class="mx-auto w-11/12 text-center bg-white">
+          <li><a href="" class="block py-2">Home</a></li>
+          <li><a :href="location + '/template1-vue/#/blog'" class="block py-2">Blog</a></li>
+          <!-- <li><a href="" class="block py-2">About</a></li> -->
+          <li><a :href="location + '/template1-vue/#/contact'" class="block py-2">Contact</a></li>
+        </ul>
+      </section>
     </nav>
   </header>
 </template>
@@ -176,10 +185,15 @@
 <script>
 export default {
   name: "Header",
-  methods: {
-    test() {
-      var test111 = "111"
-      console.log(test111)
+  data() {
+    return {
+      location: location.origin,
+      isShowHamburger: false,
+    }
+  },
+  watch: {
+    $route() {
+      this.isShowHamburger = false
     },
   },
 }

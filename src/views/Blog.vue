@@ -1,7 +1,7 @@
 <template>
   <main class="max-w-screen-xl mx-auto px-3 mt-8">
     <!-- main grid -->
-    <section class="grid md:grid-cols-3 grid-cols-1 gap-12 items-start">
+    <section class="mb-12 grid md:grid-cols-3 grid-cols-1 gap-12 items-start">
       <!-- card grid -->
       <section class="md:col-span-2 grid md:grid-cols-2 grid-cols-1 gap-12">
         <Card :imgFileName="'latest1.jpg'" :date="'2021-07-24'"></Card>
@@ -9,7 +9,7 @@
       </section>
 
       <!-- side bar -->
-      <section class="md:col-span-1">
+      <section class="md:col-span-1 md:block hidden">
         <Sidebar></Sidebar>
       </section>
     </section>
